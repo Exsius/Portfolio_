@@ -47,6 +47,29 @@ const defaultTheme = {
     setTheme: () => {}
 }
 
+const darkTheme = {
+    theme: {
+        pallete: {
+            primary: "#6699CC",
+            secondary: "white",
+            base: "black",
+            neutral: "white",
+            border: "#1d1d1e",
+        },
+        style: {
+            Paper: {
+                borderRadius: "8px",
+            },
+            Button: {
+                borderRadius: "6px",
+                fontWeight: "600",
+            },
+        }
+    },
+    //bruh.
+    setTheme: () => {}
+}
+
 const ThemeContext = createContext<IValue>(defaultTheme)
 
 export const useTheme = () => (

@@ -4,11 +4,9 @@ import Typography from "./Generic/Typography"
 const Header = () => {
 
     return(
-        <div>
-            <Typography variant="h1">
-                hello
-            </Typography>
-        </div>
+        <Typography style={{ margin: "48px 8px 8px 8px" }} variant="h1">
+            Christopher Pravlik.
+        </Typography>
     )
 }
 
