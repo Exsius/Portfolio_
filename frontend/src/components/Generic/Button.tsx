@@ -16,16 +16,16 @@ const Button = (props: IButtonProps) => {
 
     switch(variant) {
         case "contained":
-            return <button className={className} id={id} style={{ cursor: "pointer", backgroundColor: theme.pallete.primary, color: theme.pallete.base, border: "solid", borderColor: "transparent", borderRadius: theme.style.Button.borderRadius, margin: "2px", padding: "6px", borderWidth: '1px', fontWeight: theme.style.Button.fontWeight, ...style }}>{props.children}</button>
+            return <button className={className} id={id} style={{ backgroundColor: theme.pallete.primary, color: theme.pallete.buttonNeutral, borderColor: "transparent", ...(theme.style && theme.style.Button), ...style }}>{props.children}</button>
             break
         case "outlined":
-            return <button className={className} id={id} style={{ cursor: "pointer", backgroundColor: "transparent", color: theme.pallete.neutral, border: "solid", borderColor: theme.pallete.border, borderRadius: theme.style.Button.borderRadius, margin: "2px", padding: "6px", borderWidth: '1px', fontWeight: theme.style.Button.fontWeight, ...style }}>{props.children}</button>
+            return <button className={className} id={id} style={{ backgroundColor: "transparent", color: theme.pallete.neutral, borderColor: theme.pallete.border, ...(theme.style && theme.style.Button), ...style }}>{props.children}</button>
             break
         case "text":
-            return <button className={className} id={id} style={{ cursor: "pointer", backgroundColor: "transparent", color: theme.pallete.primary, border: "solid", borderColor: "transparent", borderRadius: theme.style.Button.borderRadius, margin: "2px", padding: "6px" }}>{props.children}</button>
+            return <button className={className} id={id} style={{ backgroundColor: "transparent", color: theme.pallete.neutral, borderColor: "transparent", ...(theme.style && theme.style.Button), ...style }}>{props.children}</button>
             break
         default:
-            return <button className={className} id={id} style={{ cursor: "pointer", backgroundColor: theme.pallete.primary, color: theme.pallete.base, border: "solid", borderColor: "transparent", borderRadius: theme.style.Button.borderRadius, margin: "2px", padding: "6px", borderWidth: '1px', fontWeight: theme.style.Button.fontWeight, ...style }}>{props.children}</button>
+            return <button className={className} id={id} style={{ backgroundColor: theme.pallete.primary, color: theme.pallete.buttonNeutral, borderColor: "transparent", ...(theme.style && theme.style.Button), ...style }}>{props.children}</button>
     }
 }
 

@@ -25,7 +25,16 @@ const SideNav = () => {
         <Paper style={{ width: "256px", display: "flex", flexGrow: 1, flexDirection: "column" }}>
             {links.map((link) => (
                 <div>
+                    <Button variant="contained">
+                        {link.name}
+                    </Button>
                     <Button variant="outlined">
+                        {link.name}
+                    </Button>
+                    <Button variant="text">
+                        {link.name}
+                    </Button>
+                    <Button>
                         {link.name}
                     </Button>
                 </div>
