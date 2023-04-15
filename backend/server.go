@@ -1,10 +1,11 @@
 package main
 
+import "backend/app"
+
 func main() {
 
-	err := app.SetupAndRunApp()
+	err := app.SetupApp()
 	if err != nil {
 		panic(err)
 	}
-
 }
